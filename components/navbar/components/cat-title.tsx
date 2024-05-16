@@ -5,7 +5,11 @@ type CatProp = {
 };
 
 const CategoryTitle: React.FC<CatProp> = ({ cat }: { cat: string }) => {
-  return <p className="text-3xl font-bold font-sf-pro-display">{cat}</p>;
+  return (
+    <p className="font-sf-pro-display text-xl font-bold capitalize leading-6">
+      {cat}
+    </p>
+  );
 };
 
 export default CategoryTitle;

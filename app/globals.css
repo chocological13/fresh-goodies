@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.no-scrollbar::-webkit-scrollbar {
+  /* Target Chrome, Safari, Edge, Opera */
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Target Internet Explorer 10+ */
+  overflow: hidden;
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
