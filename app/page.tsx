@@ -1,11 +1,12 @@
 import FilterSearch from "@/components/filter-search/filter-search";
 import Categories from "@/components/navbar/components/categories";
+import DetailsDrawer from "@/components/drawer/details-drawer";
 import ProductDisplay from "@/components/product-display/product-display";
 import {
   fetchDataFromAPI,
   getUniqueCategories,
   getCardInfo,
-} from "@/components/fetch";
+} from "@/lib/fetch";
 import { Product } from "@/types/product";
 
 export default function Home() {
@@ -27,10 +28,11 @@ export default function Home() {
 
   return (
     <main>
-      <div className="products-card">
+      {/* <div className="products-card">
         <ProductDisplay />
       </div>
-      <FilterSearch />
+      <FilterSearch /> */}
+      <DetailsDrawer />
     </main>
   );
 }

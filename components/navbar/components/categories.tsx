@@ -1,5 +1,5 @@
 "use client";
-import { getUniqueCategories } from "@/components/fetch";
+import { getUniqueCategories } from "@/lib/fetch";
 import { useState, useEffect } from "react";
 import React from "react";
 
